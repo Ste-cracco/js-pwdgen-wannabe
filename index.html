@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1 id="passwordID">Password</h1>
+    
+    <script>
+
+        // Variabili
+        let nome = prompt("Inserisci nome");
+        let cognome = prompt("Inserisci cognome");
+        let colore = prompt("Inserisci il tuo colore preferito");
+        let password = nome+cognome+colore+21;
+        const passwordID = document.getElementById("passwordID"); 
+
+        console.dir(passwordID)
+        // Stampa del contenuto
+        passwordID.innerHTML = (password)
+
+    </script>
+</body>
+</html>
